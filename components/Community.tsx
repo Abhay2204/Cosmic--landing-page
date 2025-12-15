@@ -25,7 +25,7 @@ const Community: React.FC = () => {
             </a>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <MotionDiv 
                 className="p-6"
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -54,19 +54,7 @@ const Community: React.FC = () => {
                 <div className="text-xs text-gray-600 mt-1">(just you!)</div>
             </MotionDiv>
 
-             <MotionDiv 
-                className="p-6"
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-            >
-                <div className="flex items-center justify-center gap-2 text-blue-400 mb-2">
-                    <Users className="w-6 h-6" />
-                </div>
-                <div className="text-3xl font-bold text-white mb-1">156</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider font-semibold">Downloads</div>
-            </MotionDiv>
+
 
              <MotionDiv 
                 className="p-6"

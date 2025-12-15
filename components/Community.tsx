@@ -35,7 +35,7 @@ const Community: React.FC = () => {
                 <div className="flex items-center justify-center gap-2 text-yellow-400 mb-2">
                     <Star className="w-6 h-6 fill-current" />
                 </div>
-                <div className="text-3xl font-bold text-white mb-1">12.5k</div>
+                <div className="text-3xl font-bold text-white mb-1">42</div>
                 <div className="text-sm text-gray-500 uppercase tracking-wider font-semibold">Stars</div>
             </MotionDiv>
             
@@ -49,8 +49,9 @@ const Community: React.FC = () => {
                 <div className="flex items-center justify-center gap-2 text-pink-400 mb-2">
                     <Heart className="w-6 h-6 fill-current" />
                 </div>
-                <div className="text-3xl font-bold text-white mb-1">840</div>
+                <div className="text-3xl font-bold text-white mb-1">1</div>
                 <div className="text-sm text-gray-500 uppercase tracking-wider font-semibold">Contributors</div>
+                <div className="text-xs text-gray-600 mt-1">(just you!)</div>
             </MotionDiv>
 
              <MotionDiv 
@@ -63,7 +64,7 @@ const Community: React.FC = () => {
                 <div className="flex items-center justify-center gap-2 text-blue-400 mb-2">
                     <Users className="w-6 h-6" />
                 </div>
-                <div className="text-3xl font-bold text-white mb-1">45k</div>
+                <div className="text-3xl font-bold text-white mb-1">156</div>
                 <div className="text-sm text-gray-500 uppercase tracking-wider font-semibold">Downloads</div>
             </MotionDiv>
 
@@ -75,11 +76,48 @@ const Community: React.FC = () => {
                 transition={{ delay: 0.3 }}
             >
                 <div className="flex items-center justify-center gap-2 text-green-400 mb-2">
-                    <span className="font-mono font-bold text-xl">Rust</span>
+                    <span className="font-mono font-bold text-xl">TS</span>
                 </div>
-                <div className="text-3xl font-bold text-white mb-1">98%</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider font-semibold">Codebase</div>
+                <div className="text-3xl font-bold text-white mb-1">90.3%</div>
+                <div className="text-sm text-gray-500 uppercase tracking-wider font-semibold">TypeScript</div>
             </MotionDiv>
+        </div>
+
+        {/* Language Breakdown */}
+        <div className="mt-16 max-w-4xl mx-auto">
+          <h3 className="text-xl font-semibold text-white mb-6">Tech Stack</h3>
+          <div className="bg-cosmic-800/30 rounded-lg p-6 border border-cosmic-700">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+              <div className="flex justify-between">
+                <span className="text-blue-400 font-mono">TypeScript</span>
+                <span className="text-gray-300">90.3%</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-yellow-400 font-mono">JavaScript</span>
+                <span className="text-gray-300">7.6%</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-orange-400 font-mono">HTML</span>
+                <span className="text-gray-300">0.7%</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-red-400 font-mono">Rust</span>
+                <span className="text-gray-300">0.5%</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-purple-400 font-mono">NSIS</span>
+                <span className="text-gray-300">0.5%</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-green-400 font-mono">Batchfile</span>
+                <span className="text-gray-300">0.2%</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-400 font-mono">Other</span>
+                <span className="text-gray-300">0.2%</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
